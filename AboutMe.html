@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	body 
+	{
+		background-color: #85FFBD;
+		background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+	}
+		
+	.slides {
+		margin-left: auto;
+		margin-right: auto;
+		display:none;
+		text-align:center;
+		align-content:center;
+	}
+	
+	.image {
+		text-align: center;
+		margin: 10px auto 20px;
+		display: block;
+		width: 135px;
+		height: 160px;
+		border-radius: 50%;
+	}
+	
+	* {box-sizing: border-box}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 15%;
+		ax-width: 300px;
+	}
+
+	.resimage {
+		text-align: center;
+		display: block;
+		height: auto;
+	}
+	
+	.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  background: rgb(0, 0, 0);
+	  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	  color: #f1f1f1;
+	  width: 150px;
+	  transition: .5s ease;
+	  opacity:0;
+	  color: white;
+	  font-size: 20px;
+	  padding: 20px;
+	  text-align: center;
+	}
+
+	.container:hover .overlay {
+		opacity: 1;
+		text-align:center;
+	}
+	
+	.column {
+	  float: left;
+	  padding: 5px;
+	}
+
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display:table;
+	}
+	
+	.button {
+		width: 90%;
+		text-align: center;
+		font-family: calibri;
+		font-size: 16px;
+		background-color: Transparent;
+		border: 2px solid #ffffff;
+		background-repeat:no-repeat;
+		padding: 15px 32px;
+		cursor:pointer;
+		overflow: hidden;
+		margin: 4px 2px;
+		outline:none;
+	}
+	
+	.center { 
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		align-content:center;
+	}
+
+	#mydiv {
+		border: solid black;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table, td, th {
+		border: 1px solid black;
+	}
+	table {
+		border-collapse: collapse;
+		background-color: #cce8d8
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	th {
+		height: 50px;
+	}
+	th, td {
+		text-align: left;
+		padding: 8px;
+		background-color: white;
+	}
+	th {
+		background-color: pink;
+	}
+</style>
+<head>
+<body>
+<!-- Image and Introduction -->
+<h1 style="text-align: center; font-family: calibri">Kary Angelly Cabrera</h1>
+<img src = "angelly_me.jpeg" alt="" class="image"></img>
+<div id="mydiv">
+<h2 style="text-align: center; font-family: calibri">About Me</h2>
+<p style="text-align: center; font-family: calibri">I am an Electrical and Computer Engineering student passionate about sustainability and facilitating positive interactions between the environment and emerging technologies. Even as technology continues to evolve, sustainable development is vital to the future of biodiversity and culture preservation. As an engineer with prior research experience, my skills include programming primarily in C/C++ and hardware design. In addition, I have experience using CAD software such as Autodesk and NX, as well as creating graphic designs.</p>
+<p style="text-align: center; font-family: calibri">My interest in engineering sparked when I created my first robot in the eighth grade, and since then I developed an old habit of tinkering and breaking apart old electronics for spare parts. I later went on to attend an engineering-focused high school where I partipcated in clubs such as Girls Build LA, USC's Mathematics Engineering Science Ahceivement (MESA) and Solar Boat. In the summer of my junior
+year in hgih school, I participated in a research program at USC to study the causes of muscular dystrophy. This opportunity helped me realize how much I enjoy working in a laboratory setting and conducting lab experiments. As a first generation college student, my goal is to help students from underprivilged communties like myself obtain a secondary education. 
+hands-on experiments</p>
+
+<!-- Button Links -->
+<div class="center">
+<form action="https://www.linkedin.com/in/karycabrera/" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">LinkedIn</button>
+</form>
+
+<form action="https://github.com/BitterDer" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">GitHub</button>
+</form>
+
+<form action="https://app.tallo.com/profile/245632?accessCode=vhVVuQspTK0IPUyZ4HfFYAzaaGir_BKnUobH2KEBblY" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">Tallo</button>
+</form>
+</div>
+
+<!-- Article Links -->
+<h3 style="text-align: center; font-family: calibri">Features and Publications</h3>
+<div class="center">
+<form action="https://www.creaitivity.org/post/creaitivity-ai-ethics-lab-winner-kary-angelly-cabrera" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">creAItivity AI Ethics Lab Winner Feature</button>
+</form>
+
+<form action="https://www.aspirations.org/user/96552" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">NCWIT Aspirations in Computing</button>
+</form>
+
+<form action="https://www.instagram.com/lmstasolarcup/" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">Solar Cup</button>
+</form>
+
+<form action="https://2020kc4570.wixsite.com/lumiexploravision" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">Self-Sustaining Electromagnetic Light Post System</button>
+</form>
+
+<form action="https://athenaiagirlsbuildlennoxacademy.weebly.com/our-project.html" method="get" target="_blank">
+         <button class="button" style="text-align: center; font-family: calibri type="submit">Recycled Portable Water Filter</button>
+</form>
+</div>
+<!-- End of Article Links -->
+
+<!-- Awards and Honors -->
+<h3 style="text-align: center; font-family: calibri">Awards and Honors</h3>
+<div class="center">
+
+<div class="row">
+
+<div class="column">
+<div class="container">
+  <img src="AmericaNeedsYou.png" width="150" height="150" alt="ANY 2021 Cohort" style="text-align: center" class="resimage">
+  <div class="overlay">America Needs You Fellow 2021</div>
+</div>
+</div>
+
+<div class="column">
+<div class="container">
+  <img src="TrojanScholar.png" width="175" height="150" alt="USC Presidential Scholar" style="text-align: center" class="resimage">
+  <div class="overlay">Trojan Presidential Scholar 2020</div>
+</div>
+</div>
+
+<div class="column">
+<div class="container">
+  <img src="AspirationsAwardLogo_FullColor-01.png" width="150" height="150" alt="NCWIT Aspirations 2020 National and Affiliate Award" style="text-align: center" class="resimage">
+  <div class="overlay">NCWIT Aspirations National and Affiliate Award 2020</div>
+</div>
+</div>
+
+<div class="column">
+<div class="container">
+  <img src="QuestBridgeLogo.png" width="150" height="150" alt="QuestBridge Scholar" style="text-align: center" class="resimage">
+  <div class="overlay">QuestBridge College Match Scholar 2020</div>
+</div>
+</div>
+
+<div class="column">
+<div class="container">
+  <img src="HispanicHeritage.png" width="150" height="150" alt="Hispanic Heritage Yotuh Awards" style="text-align: center" class="resimage">
+  <div class="overlay">Hispanic Heritage Technology Youth Award 2019</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<h3 style="text-align: center; font-family: calibri">Past Projects</h3>
+
+<div class="center">
+<div class="display-container">
+  <img class="slides" src="Filtration System.png" style="width:70%">
+  <img class="slides" src="PosterTemplate.jpg" style="width:70%">
+  <img class="slides" src="BUGS_USC Biophotonics_Emerin.jpg" style="width:70%">
+  <img class="slides" src="Puzzle_Cube.png" style="width:70%">
+  <img class="slides" src="Kary_Cabrera_Train_Project_Blueprint___High_school.png" style="width:70%">
+  <img class="slides" src="Power_Cell_Train.PNG" style="width:69%">
+  <img class="slides" src="Kary_Cabrera_Chevron_Racecar_Project.png" style="width:69%">
+  <img class="slides" src="Light_Post.jpeg" style="width:390px">
+
+  <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<div class="display-container">
+<embed class="slides" src="Solar_Boat_Mechanical_Report_2020.pdf" width="650px" height="800px" />
+<embed class="slides" src="Solar_Cup_Electrical_Report_2020.pdf" width="650px" height="800px" />
+<embed class="slides" src="Solar_Boat_Mechanical_Report_2019.pdf" width="650px" height="800px" />
+<embed class="slides" src="Self_Sustaining_Light_Post_System.pdf" width="650px" height="800px" />
+<embed class="slides" src="EDD_Airfoil.pdf" width="650px" height="800px" />
+</div>
+
+</div>
+
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</div>
+
+</body>
+</html>
