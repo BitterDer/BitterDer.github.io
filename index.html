@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kary Angelly Cabrera's Personal Website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+	body 
+	{
+		background-color: #85FFBD;
+		background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+	}
+	
+	* {box-sizing: border-box}
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
+		width: 15%;
+		ax-width: 300px;
+	}
+
+	.resimage {
+		text-align: center;
+		display: block;
+		height: auto;
+	}
+	
+	.overlay {
+	  position: absolute;
+	  bottom: 0;
+	  background: rgb(0, 0, 0);
+	  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+	  color: #f1f1f1;
+	  width: 150px;
+	  transition: .5s ease;
+	  opacity:0;
+	  color: white;
+	  font-size: 20px;
+	  padding: 20px;
+	  text-align: center;
+	}
+
+	.container:hover .overlay {
+		opacity: 1;
+		padding: 20px;
+		text-align:center;
+	}
+	
+	.column {
+	  float: left;
+	  padding: 30px;
+	}
+
+	.row::after {
+	  content: "";
+	  clear: both;
+	  display:table;
+	}
+	
+	.center { 
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		align-content:center;
+	}
+
+	#mydiv {
+		border: solid black;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	table, td, th {
+		border: 1px solid black;
+	}
+	table {
+		border-collapse: collapse;
+		background-color: #cce8d8
+		width: 25%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	th {
+		height: 50px;
+	}
+	th, td {
+		text-align: left;
+		padding: 8px;
+		background-color: white;
+	}
+	th {
+		background-color: pink;
+	}
+</style>
+</head>
+<body>
+	<div class="hero" id="Home">
+	        <nav>
+	            <img src="./img/logo.png" class="logo">
+	            <ul>
+	                <li><a href="#Home">Home</a></li>
+	                <li><a href="#About">About</a></li>
+	                <li><a href="#Projects">Portfolio</a></li>
+	                <li><a href="#">Blog</a></li>
+	                <li><a href="#Contact">Contact</a></li>
+	            </ul>
+	            <!--- <a href="#" class="btn">Buy Now</a> --->
+	        </nav>
+
+	        <div class="content">
+	            <span class="title">Undergraduate Student</span>
+	            <h1>Hello, I’m <span>Angelly</span></h1>
+	            <p>I’m an undergraduate student at the University of Southern California majoring in Electrical and Computer Engineering.</p>
+	            <a href="Kary_Cabrera_Resume.pdf" class="btn">Download CV</a>
+	        </div>
+	          <img src = "angelly_me.jpeg" alt="" style="text-align: right" class="image"></img>
+	 </div>
+
+	<div class="column-2" id="About">
+	    <h1>About Me</h1>
+	     <p> I am a rising junior at USC who is interested in machine learning research for holistic societal applications. As a first-generation college student from a low-income background, I am passionate about using sustainable technology to empower and support families burdened by trauma, poverty, and pollution. My first exposure to AI research was during my freshman year of college where I worked with my university's computer media lab to research music API models for patients with cognitive disabilites. Now, I am interning at my university's signal processing lab and Cornell University to program and experiment with machine learning algorithms for a variety of applications.</p>
+	    <!-- Awards and Honors -->
+	    <div class="column">
+			<div class="container">
+			  	<img src="AmericaNeedsYou.png" width="50" height="50" alt="ANY 2021 Cohort" style="text-align: center" class="resimage">
+			  	<div class="overlay">America Needs You Fellow 2021</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="container">
+				<img src="AspirationsAwardLogo_FullColor-01.png" width="65" height="65" alt="NCWIT Aspirations 2020 National and Affiliate Award" style="text-align: center" class="resimage">
+				<div class="overlay">NCWIT Aspirations National Award 2020</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="container">
+			  	<img src="breakthroughtech.png" width="70" height="70" alt="Break Through Tech Fellow 2022" style="text-align: center" class="resimage">
+			  	<div class="overlay">Break Through Tech Fellow 2022</div>
+			</div>
+		</div>
+		<div class="column">
+			<div class="container">
+			  	<img src="googleleadership.png" width="40" height="40" alt="Google Latinx Student Leader" style="text-align: center" class="resimage">
+			  	<div class="overlay">Google Latinx Summit 2022</div>
+			</div>
+		</div>
+	</div>
+
+<div class="center" id="Projects">
+<div class="column-3">
+	<div class="center">
+		<div class="column">
+			<img src="E.M.O.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap">
+			<form action="https://drive.google.com/file/d/1Bj2I5mddRc2lFHM6sEbh3R6eGsOyY4Pe/view?usp=sharing" method="get" target="_blank">
+			<button class="button"><span class="title">Emotion Measuring Object (E.M.O)</span></button>
+			</form>
+			<p style="font-size: 11px">The creAItivity AI Ethics Lab provides students the opportunity to deliver a project focused on technology and social justice. As a fellow, I worked with my cohort to research and design a circuit that could determine whether an individual was angry based on the volume of their voice.</p>
+				<div class="container">
+					<form action="https://www.creaitivity.org/post/creaitivity-ai-ethics-lab-winner-kary-angelly-cabrera" method="get" target="_blank">
+				  	<img src="creaitivity.jpg" width="55" height="55" alt="creaitivty" style="left: 13%;">
+				  	<button><div class="overlay">CreAItivity AI Ethics Lab 2021</div></button>
+				  	</form>
+				</div>
+		</div>
+	</div>
+</div>
+
+<div class="column-3">
+	<div class="center">
+		<div class="column">
+			<img src="E.M.O.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap">
+			<form action="https://drive.google.com/file/d/1GkxBUSIbuP31J0M08WUspBreWrEu-XnZ/view?usp=sharing" method="get" target="_blank">
+			<button class="button"><span class="title">Music Genre Prediction</span></button>
+			</form>
+			<p style="font-size: 11px">Developed as a final project for my distributed systems class, this loT system creates a three-way connection between the Raspberry Pi and two RESTFUL APIs combined with machine learning to predict music genre using volume sensor data and return song reccomendations based on the predicted genre.</p>
+				<form action="https://docs.google.com/document/d/1q0ghPdBKwWVu_WVGTgk5B0wRTVcjCwbOeJS1zmdFUdE/edit?usp=sharing" method="get" target="_blank">
+				<div class="container">
+				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 10%;">
+				  	<button><div class="overlay">EE250 Distributed Systems 2021</div></button>
+				</div>
+				</form>
+		</div>
+	</div>
+</div>
+
+<div class="column-3">
+	<div class="center">
+		<div class="column">
+			<img src="bugsresearch.jpg" width="100" height="100" alt="Molecular Research" style="text-align: center" class="image-overlap-2">
+			<form action="https://drive.google.com/file/d/0B9QfC2lSmYPpMFlPaUhEUmJxOWg0cTNDSDdwSzhZbVU3YmY0/view?resourcekey=0-44WoAQs5N_6MG9j5MjuA-g" method="get" target="_blank">
+			<button class="button"><span class="title">Muscular Dystrophy Research</span></button>
+			</form>
+			<p style="font-size: 11px">The Single Molecule Biophysics Group at the University of Southern California offers a summer research program in nanoengineering exploration. My responsibilities included protein extraction and visualizing protein concentrations in patients with muscular dystrophy using imaging technology.</p>
+				<form action="https://dornsife.usc.edu/labs/smbg/group-members/" method="get" target="_blank">
+				<div class="container">
+				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 13%;">
+				  	<button><div class="overlay">Bridge Undergraduate Institute 2018</div></button>
+				</div>
+				</form>
+		</div>
+	</div>
+</div>
+
+<div class="column-3">
+	<div class="center">
+		<div class="column">
+			<!-- <img src="uscsail.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap-row2"> -->
+			<form action="https://docs.google.com/presentation/d/1ba3L_Ox8-xiJmuls-GkY6PCecd4_RJ3_uoy_6xv-ow4/edit?usp=sharing" method="get" target="_blank">
+			<button class="button"><span class="title">Exploring Music4All Datasets</span></button>
+			</form>
+			<p style="font-size: 11px">In conjunction with Google, the Center Computational Media Intelligence at the University of Southern California organized a 5-month project to explore human-centered AI technology. My responsibility included analyzing various music APIs to develop a final presentation on holistic media applications.</p>
+				<form action="https://sail.usc.edu/~ccmi/csr/" method="get" target="_blank">
+				<div class="container">
+				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 13%;">
+				  	<button><div class="overlay">USC ExploreCSR 2021</div></button>
+				</div>
+				</form>
+		</div>
+	</div>
+</div>
+
+<div class="column-3">
+	<div class="center">
+		<div class="column">
+			<!-- <img src="uscsail.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap-row2"> -->
+			<form action="#" method="get" target="_blank">
+			<button class="button"><span class="title">Machine Learning for Mental Health</span></button>
+			</form>
+			<p style="font-size: 11px">The Signal Analysis and Interpretation Laboratory at the University of Southern California collects a compilation of environmental and biometric data to monitor the emotional health of low-income families. My resposnibilites include programming and experiment with models to process data.</p>
+				<form action="#" method="get" target="_blank">
+				<div class="container">
+				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 13%;">
+				  	<button><div class="overlay">USC SAIL Research 2022</div></button>
+				</div>
+				</form>
+		</div>
+	</div>
+</div>
+</div>
+
+<!-- Article Links -->
+<div class="section">
+	<div class="center">
+		<form action="https://events.withgoogle.com/lsls2022/meet-our-student-leaders/" method="get" target="_blank">
+			<button class="button"><span class="title">Google Latinx Leadership Feature</span></button>
+		</form>
+
+		<form action="https://www.instagram.com/lmstasolarcup/" method="get" target="_blank">
+			<button class="button" style="text-align: center; font-family: calibri type="submit">Solar Cup</button>
+		</form>
+	</div>
+</div>
+
+<!-- End of Article Links -->
+
+<!--
+<div class="center">
+	<div class="display-container">
+	  <img class="slides" src="Filtration System.png" style="width:70%">
+	  <img class="slides" src="PosterTemplate.jpg" style="width:70%">
+	  <img class="slides" src="BUGS_USC Biophotonics_Emerin.jpg" style="width:70%">
+	  <img class="slides" src="Kary_Cabrera_Train_Project_Blueprint___High_school.png" style="width:70%">
+	  <img class="slides" src="Kary_Cabrera_Chevron_Racecar_Project.png" style="width:69%">
+	  <img class="slides" src="Light_Post.jpeg" style="width:390px">
+
+	  <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+	  <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	<div class="display-container">
+	<embed class="slides" src="Solar_Boat_Mechanical_Report_2020.pdf" width="650px" height="800px" />
+	<embed class="slides" src="Solar_Cup_Electrical_Report_2020.pdf" width="650px" height="800px" />
+	<embed class="slides" src="Solar_Boat_Mechanical_Report_2019.pdf" width="650px" height="800px" />
+	<embed class="slides" src="Self_Sustaining_Light_Post_System.pdf" width="650px" height="800px" />
+	<embed class="slides" src="EDD_Airfoil.pdf" width="650px" height="800px" />
+	</div>
+</div>
+-->
+
+<!-- Slideshow container -->
+<!--
+<div class="center">
+	<div class="slideshow-container">
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">1 / 3</div>
+	    <img src="BUGS_USC Biophotonics_Emerin.jpg" style="width:70%">
+	    <div class="text">Caption Text</div>
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">2 / 3</div>
+	    <img src="img2.jpg" style="width:100%">
+	    <div class="text">Caption Two</div>
+	  </div>
+
+	  <div class="mySlides fade">
+	    <div class="numbertext">3 / 3</div>
+	    <img src="img3.jpg" style="width:100%">
+	    <div class="text">Caption Three</div>
+	  </div>
+
+	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+	</div>
+	<br>
+
+	<div style="text-align:center">
+	  <span class="dot" onclick="currentSlide(1)"></span>
+	  <span class="dot" onclick="currentSlide(2)"></span>
+	  <span class="dot" onclick="currentSlide(3)"></span>
+	</div>
+</div>
+
+<script>
+	let slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  let i;
+	  let slides = document.getElementsByClassName("mySlides");
+	  let dots = document.getElementsByClassName("dot");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+	    slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+	    dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+	}
+</script>
+-->
+
+<div class="center">
+	<div id="Contact">
+		<a href="https://www.linkedin.com/in/karycabrera/" class="fa fa-linkedin"></a>
+		<a href="https://github.com/BitterDer" class="fa fa-github"></a>
+	</div>
+</div>
+<!--
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("slides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+-->
+</div>
+
+</body>
+</html>
