@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.logo{
+    max-height: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: #1d1d24;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: ##85FFBD;
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: #85FFBD;
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+    background-color: #85FFBD;
+    border: 2px solid #85FFBD;;
+}
+.btn:hover{
+    background: transparent;
+    border-color: #85FFBD;
+    color: #85FFBD;
+}
+.content{
+    position: absolute;
+    float: left;
+    top: 35%;
+    left: 8%;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: #85FFBD;
+}
+.content p{
+    width: 55%;
+    color: #757575;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.slides {
+    margin-left: auto;
+    margin-right: auto;
+    display:none;
+    text-align:center;
+    align-content:center;
+}
+
+.button {
+    width: 90%;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    /**background-repeat:no-repeat;*/
+    padding: 15px 32px;
+    cursor:pointer;
+    overflow: hidden;
+    margin: 4px 2px;
+    outline:none;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.image {
+    float: right;
+    width: 45%;
+    padding: 40px;
+    padding-right: 150px;
+    margin-left:30px;
+    margin-bottom: 70px;
+    width: 50%;
+    height: 100vh;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+/* Create two equal columns that float next to each other */
+.column-2
+{
+    float: center;
+    align-content:center;
+    width: 70%;
+    padding: 40px;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 500px;
+    margin:150px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #FFF;
+    line-height:2;
+}
+
+.footer
+{
+    float: center;
+    width: auto;
+    padding: 30px;
+    height: 100px;
+    line-height:2;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 60px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 7px 2px;
+}
+
+
+.fa-linkedin {
+    background-image: transparent;
+    color: white;
+}
+
+.fa-github {
+    background-image: transparent;
+    color: white;
+}
+
+/**
+.section
+{
+    float: center;
+    align-content:center;
+    width: 70%;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 500px;
+    margin:150px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height:2;
+}
+**/
+.column-3 {
+  float: left;
+  align-content: center;
+  width: 29%;
+  padding: 40px;
+  padding-left:20px;
+  padding-right: 20px;
+  height: 380px;
+  margin:20px;
+  margin-left:30px;
+  margin-bottom: 70px;
+  background-color: #FFF;
+  line-height:2;
+}
+
+.image-overlap {
+    position: absolute;
+    left: 13%;
+    top: 240%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.image-overlap-2 {
+    position: absolute;
+    left: 80%;
+    top: 240%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.image-overlap-row2 {
+    position: absolute;
+    left: 12%;
+    top: 321%;
+    text-align: center;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
