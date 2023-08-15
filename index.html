@@ -1,364 +1,147 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-	<title>Kary Angelly Cabrera's Personal Website</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-	body 
-	{
-		background-color: #85FFBD;
-		background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
-	}
-	
-	* {box-sizing: border-box}
-
-	.container {
-		margin-left: auto;
-		margin-right: auto;
-		position: relative;
-		width: 15%;
-		ax-width: 300px;
-	}
-
-	.resimage {
-		text-align: center;
-		display: block;
-		height: auto;
-	}
-	
-	.overlay {
-	  position: absolute;
-	  bottom: 0;
-	  background: rgb(0, 0, 0);
-	  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-	  color: #f1f1f1;
-	  width: 150px;
-	  transition: .5s ease;
-	  opacity:0;
-	  color: white;
-	  font-size: 20px;
-	  padding: 20px;
-	  text-align: center;
-	}
-
-	.container:hover .overlay {
-		opacity: 1;
-		padding: 20px;
-		text-align:center;
-	}
-	
-	.column {
-	  float: left;
-	  padding: 30px;
-	}
-
-	.row::after {
-	  content: "";
-	  clear: both;
-	  display:table;
-	}
-	
-	.center { 
-		margin-left: auto;
-		margin-right: auto;
-		text-align:center;
-		align-content:center;
-	}
-
-	#mydiv {
-		border: solid black;
-		width: 80%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	table, td, th {
-		border: 1px solid black;
-	}
-	table {
-		border-collapse: collapse;
-		background-color: #cce8d8
-		width: 25%;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	th {
-		height: 50px;
-	}
-	th, td {
-		text-align: left;
-		padding: 8px;
-		background-color: white;
-	}
-	th {
-		background-color: pink;
-	}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-	<div class="hero" id="Home">
-	        <nav>
-	            <img src="./img/logo.png" class="logo">
-	            <ul>
-	                <li><a href="#Home">Home</a></li>
-	                <li><a href="#About">About</a></li>
-	                <li><a href="#Projects">Portfolio</a></li>
-	                <li><a href="#">Blog</a></li>
-	                <li><a href="#Contact">Contact</a></li>
-	            </ul>
-	        </nav>
-
-	        <div class="content">
-	            <span class="title">Undergraduate Student</span>
-	            <h1>Hello, I’m <span>Angelly</span></h1>
-	            <p>I’m an undergraduate student at the University of Southern California majoring in Electrical and Computer Engineering.</p>
-	            <a href="Kary_Cabrera_Resume.pdf" class="btn">Download CV</a>
-	        </div>
-	          <img src = "angelly_me.jpeg" alt="" style="text-align: right" class="image"></img>
-	 </div>
-
-	<div class="column-2" id="About">
-	    <h1>About Me</h1>
-	     <p> I am a rising junior at USC who is interested in machine learning research for holistic societal applications. As a first-generation college student from a low-income background, I am passionate about using sustainable technology to empower and support families burdened by trauma, poverty, and pollution. My first exposure to AI research was during my freshman year of college where I worked with my university's computer media lab to research music API models for patients with cognitive disabilites. Now, I am interning at my university's signal processing lab and Cornell University to program and experiment with machine learning algorithms for a variety of applications.</p>
-	    <!-- Awards and Honors -->
-	    <div class="column">
-			<div class="container">
-			  	<img src="AmericaNeedsYou.png" width="50" height="50" alt="ANY 2021 Cohort" style="text-align: center" class="resimage">
-			  	<div class="overlay">America Needs You Fellow 2021</div>
-			</div>
+  <nav>
+    <img class="profile-img" src="images/angelly_me.jpeg" alt="Kary Angelly Cabrera">
+    <a href="#about" class="hover">About Me</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#presentations">Presentations</a>
+    <a href="#awards">Awards</a>
+    <a href="#cv">CV</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <script>
+    var hamburgerMenu = document.querySelector('.hamburger-menu');
+    hamburgerMenu.onclick = function() {
+      this.parentElement.classList.toggle('active');
+    };
+  </script>
+  
+  <div class="container">
+    <section id="about">
+      <h2><br>Welcome,</h2>
+      <p>My name is Angelly and I am an Electrical and Computer Engineering student at the University of Southern California (USC), specializing in Artificial Intelligence Applications. My interest in academic research ignited at the age of sixteen when I interned at my university's Biophotonics lab, investigating the relationship between Emerin and Actin protein concentrations in the development of Emery-Dreifuss Muscular Dystrophy.<br></p>
+      <p><br>As an undergraduate at USC, I've been recognized as a Presidential Scholar, Viterbi Fellow, and a Ming Hsieh Institute Undergraduate Research Scholar. These accolades have provided me with exclusive funding, leadership opportunities, and invaluable mentorship.</p>
+      <p><br>Now, as I look ahead to my journey as a prospective graduate student, I am looking to integrate my passion for the environment with my interests in machine learning to develop sustainable technology that benefits agricultural communities and promote greater access in communities most burned by the climate crisis.</p>
+	  <p><br>Below is a list of featured projects, awards and recognitions in greater detail.</p>
+	  <!--
+    <div class="column">
+		<div class="imgcontainer">
+			  <img src="images\googleleadership.png" width="40" height="40" alt="Google CSRMP 2023" style="text-align: center" class="resimage">
+			  <div class="overlay">Google CSRMP 2023</div>
 		</div>
-		<div class="column">
-			<div class="container">
-				<img src="AspirationsAwardLogo_FullColor-01.png" width="65" height="65" alt="NCWIT Aspirations 2020 National and Affiliate Award" style="text-align: center" class="resimage">
-				<div class="overlay">NCWIT Aspirations National Award 2020</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="container">
-			  	<img src="breakthroughtech.png" width="70" height="70" alt="Break Through Tech Fellow 2022" style="text-align: center" class="resimage">
-			  	<div class="overlay">Break Through Tech Fellow 2022</div>
-			</div>
-		</div>
-		<div class="column">
-			<div class="container">
-			  	<img src="googleleadership.png" width="40" height="40" alt="Google Latinx Student Leader" style="text-align: center" class="resimage">
-			  	<div class="overlay">Google Latinx Summit 2022</div>
-			</div>
-		</div>
-	</div>
+    -->
+    </section>
 
-<div class="center" id="Projects">
-<div class="column-3">
-	<div class="center">
-		<div class="column">
-			<img src="E.M.O.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap">
-			<form action="https://drive.google.com/file/d/1Bj2I5mddRc2lFHM6sEbh3R6eGsOyY4Pe/view?usp=sharing" method="get" target="_blank">
-			<button class="button"><span class="title">Emotion Measuring Object (E.M.O)</span></button>
-			</form>
-			<p style="font-size: 11px">The creAItivity AI Ethics Lab provides students the opportunity to deliver a project focused on technology and social justice. As a fellow, I worked with my cohort to research and design a circuit that could determine whether an individual was angry based on the volume of their voice.</p>
-				<div class="container">
-					<form action="https://www.creaitivity.org/post/creaitivity-ai-ethics-lab-winner-kary-angelly-cabrera" method="get" target="_blank">
-				  	<img src="creaitivity.jpg" width="55" height="55" alt="creaitivty" style="left: 13%;">
-				  	<button><div class="overlay">CreAItivity AI Ethics Lab 2021</div></button>
-				  	</form>
-				</div>
-		</div>
-	</div>
-</div>
+    <section id="research">
+      <h2><br>Research Interests</h2>
+      <p>My research interests encompass two primary areas: computational sustainability and human-computer interaction. I have had the privilege to engage in various research experiences, and below are some select examples of my contributions in these fields.<br></p>
+      <br>
+      <div class="project">
+          <h3>Verizon: Identifying Objects and Sorting by Color</h3>
+          <p>Over 5 months, I collaborated closely with Verizon engineers and data scientists on a project aimed at training object detection models for product classification. My contributions involved creating training and validation datasets by annotating images of popular phone models and developing a color sorting algorithm by extracting RGB values from these images. These datasets played a crucial role in training the object detection models, which achieved remarkable results in sorting phones by brand and color with a high confidence level of 96% and a precision of 98%. Additionally, the color sorting algorithm was capable of accurately sorting and predicting over 800  distinct colors.</p>
+      </div>
+      <div class="project">
+        <h3>Understanding the Role of Machine Learning for Music in Media</h3>
+        <p></p>
+      </div>
+      <div class="project">
+        <h3>The Impact of Emerin and Actin Protein Synthesis Disruption on Muscular Dystrophy Caused by RNA Interference</h3>
+        <p></p>
+      </div>
+      <div class="project">
+        <h3>Developing an Emotion Measuring Object (EMO): A Circuit Design Approach for Voice-based Anger Detection</h3>
+        <p>During the two-month-long CreAItivity AI Ethics Lab fellowship and competition, I actively engaged in weekly workshops focusing on the current ethical research in AI. As a fellow, I collaborated with a small team to develop an emotion-measuring device that utilized Arduino volume sensors to predict anger levels, earning us 2nd place overall in the competition. Furthermore, I conducted an in-depth analysis on the ethical concerns of artificial intelligence and its potential applications for social good, which I presented and contributed to in writing.</p>
+      </div>
+      <!-- Add more awards as needed -->
+    </section>
 
-<div class="column-3">
-	<div class="center">
-		<div class="column">
-			<img src="E.M.O.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap">
-			<form action="https://drive.google.com/file/d/1GkxBUSIbuP31J0M08WUspBreWrEu-XnZ/view?usp=sharing" method="get" target="_blank">
-			<button class="button"><span class="title">Music Genre Prediction</span></button>
-			</form>
-			<p style="font-size: 11px">Developed as a final project for my distributed systems class, this loT system creates a three-way connection between the Raspberry Pi and two RESTFUL APIs combined with machine learning to predict music genre using volume sensor data and return song reccomendations based on the predicted genre.</p>
-				<form action="https://docs.google.com/document/d/1q0ghPdBKwWVu_WVGTgk5B0wRTVcjCwbOeJS1zmdFUdE/edit?usp=sharing" method="get" target="_blank">
-				<div class="container">
-				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 10%;">
-				  	<button><div class="overlay">EE250 Distributed Systems 2021</div></button>
-				</div>
-				</form>
-		</div>
-	</div>
-</div>
+    <section id="projects">
+      <h2><br>Featured Projects</h2>
+      <p>Below are a select few of my most challenging projects that required a fair bit of research.</p>
+      <br>
+      <div class="project">
+        <h3>Flick Pick: A Collaborative Filtering-Based Movie Recommendation Chrome Extension</h3>
+        <p>
+			Flick Picks is a movie recommendation Chrome extension that utilizes collaborative filtering to create personalized movie suggestions based on user preferences and the ratings of a community of users.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Super Mario for VGA</h3>
+        <p>
+			    In this project, I developed a platformer game inspired by the 8-bit Super Mario for VGA using Verilog and Vivado. The goal was to create a game where the player could move through a map with obstacles and enemies, collect coins, and reach the end. I designed various mechanics, including obstacles with unique behaviors, collision checks, and gravity for realistic jumping and falling. 
+        </p>
+      </div>
+	   <div class="project">
+        <h3>Electric Guitar with Notch-Filter for Signal Attenuation</h3>
+        <p> 
+          In this project, I successfully built an electric guitar and designed a band-reject filter using a simple op-amp circuit to amplify the guitar pickup's electrical signal and reject specific frequencies. The project consisted of three main phases. In the first phase, I constructed the guitar using a wooden block as the neck and a cigar box as the body, with a Seymour Duncan pickup. In the second phase, I designed the band-reject filter to reject a selected frequency of 196 Hz. I experimented with different resistor and capacitor values using LTSpice and then built the circuit accordingly. In the third phase, I physically built the notch filter and connected it to the guitar pickup, producing sound from the guitar. 
+        </p>
+      </div>
+      <div class="project">
+        <h3>Raspberry PI-Based K-Means for Music Genre Classification</h3>
+        <p> 
+          In this project, I contributed to creating an IoT system that utilized K-means clustering, connecting a Raspberry Pi with RESTFUL APIs to recommend music based on sound sensor data. The process involved using sound sensors to collect data, which was then subjected to K-means clustering to determine the genre of the music. This genre information was used to search the top three tracks belonging to that genre which are displayed on the Raspberry Pi's LCD.
+        </p>
+      </div>
+      <div class="project">
+        <h3>Solar Boat</h3>
+        <p> 
+          My personal favorite. In this year-long competition, I led a team of 20 students to design a 16-foot solar powered boat accompanied with several technical reports and a public service announcemnt on water conservation. Acheiving perfect scores on every technical report, the first time ever in my high-school's history, placed us as one of the few top scoring teams regionally across all competing schools in California. However, we never got to race our boat due to the pandemic.
+        </p>
+      </div>
+      <!-- Add more projects as needed -->
+    </section>
 
-<div class="column-3">
-	<div class="center">
-		<div class="column">
-			<img src="bugsresearch.jpg" width="100" height="100" alt="Molecular Research" style="text-align: center" class="image-overlap-2">
-			<form action="https://drive.google.com/file/d/0B9QfC2lSmYPpMFlPaUhEUmJxOWg0cTNDSDdwSzhZbVU3YmY0/view?resourcekey=0-44WoAQs5N_6MG9j5MjuA-g" method="get" target="_blank">
-			<button class="button"><span class="title">Muscular Dystrophy Research</span></button>
-			</form>
-			<p style="font-size: 11px">The Single Molecule Biophysics Group at the University of Southern California offers a summer research program in nanoengineering exploration. My responsibilities included protein extraction and visualizing protein concentrations in patients with muscular dystrophy using imaging technology.</p>
-				<form action="https://dornsife.usc.edu/labs/smbg/group-members/" method="get" target="_blank">
-				<div class="container">
-				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 13%;">
-				  	<button><div class="overlay">Bridge Undergraduate Institute 2018</div></button>
-				</div>
-				</form>
-		</div>
-	</div>
-</div>
+    <section id="presentations">
+      <h2><br>Presentations</h2>
+      <div class="award">
+        <ul>
+          <li>MICROSOFT E+D INTERN DEMO SYMPOSIUM , Microsoft Headquarters, Redmond, WA, July 2023. Cabrera, A., Saldana G., Hassan N., Umoren E., “Incident Post-Mortem Analysis,” Selected as one of the top 50 teams, from a competitive organization-wide selection, to present at the Microsoft E+D Intern Symposium.</li>
+          <li>BREAK THROUGH TECH LOS ANGELES, University of California, Los Angeles (UCLA), Los Angeles, CA, December 2022. Cabrera, A., Reyes S., “<a href="https://docs.google.com/presentation/d/1Qv1bzP7mPOSadjMTkd4OtHOTgF39Bd2bOebcKOvpu9g/edit#slide=id.g16a6a87d4ab_0_0">Team Verizon: Identifying Objects and Sorting by Color</a>,” Presentation awarded finalist title for the National Center for Women in Technology's Collegiate award</li>
+          <li>CENTER OF COMPUTATIONAL MEDIA INTELLIGENCE EXPLORECSR, University of Southern California, Los Angeles, CA, May 2021. Cabrera, A., Ojukwu, C., Lim, S., Deng, J., “Understanding the Role of Machine Learning for Music in Media”</li>
+          <li>LENNOX MATHEMATICS SCIENCE ENGINEERING ACADEMY, Lennox Mathematics Science Engineering Academy, Lennox, CA, June 2020. Cabrera, A., Cancinos, J., Salgado, N., Perez, D., “Self-Sustaining Light Post System Utilizing an Electromechanical Generator”</li>
+          <li>BRIDGE UNDERGRADUATE SCIENCE INSTITUTE SYMPOSIUM, University of Southern California, Los Angeles, CA, August 2018. Cabrera, A., Rodriguez, W., “The Impact of Emerin and Actin Protein Synthesis Disruption on Muscular Dystrophy Caused by RNA Interference”</li>
+        </ul>
+      </div>
+    </section>
 
-<div class="column-3">
-	<div class="center">
-		<div class="column">
-			<!-- <img src="uscsail.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap-row2"> -->
-			<form action="https://docs.google.com/presentation/d/1ba3L_Ox8-xiJmuls-GkY6PCecd4_RJ3_uoy_6xv-ow4/edit?usp=sharing" method="get" target="_blank">
-			<button class="button"><span class="title">Exploring Music4All Datasets</span></button>
-			</form>
-			<p style="font-size: 11px">In conjunction with Google, the Center Computational Media Intelligence at the University of Southern California organized a 5-month project to explore human-centered AI technology. My responsibility included analyzing various music APIs to develop a final presentation on holistic media applications.</p>
-				<form action="https://sail.usc.edu/~ccmi/csr/" method="get" target="_blank">
-				<div class="container">
-				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 13%;">
-				  	<button><div class="overlay">USC ExploreCSR 2021</div></button>
-				</div>
-				</form>
-		</div>
-	</div>
-</div>
+    <section id="awards">
+      <h2><br>Awards</h2>
+      <div class="award">
+          <ul>
+            <li>Graduate School Mentorship Initiative, Cientifico Latino (2023): Selected as one of 100 high-achiving students to participate in Cientifico Latino's Graduate School Mentorship Initiative (GSMI)</li>
+            <li>Ming Hsieh Institute Undergraduate Research Scholar, USC (2023): Selected as one of 5 undergraduate researchers to receive exclusive funding, leadership, and mentorship opportunities</li>
+            <li>Collegiate Award Finalist, NCWIT Aspirations in Computing (2023): Selected as one of 47 undergraduate and graduate women to receive recognition for developing high-impact projects</li>
+            <li>Computer Science Research Mentorship Program (CSRMP), Google (2023): Selected as one of 135 students to participate in Google’s semester-long research pathways and mentorship program</li>
+            <li>Latinx Student Leader, Google (2022): Selected as one of 130 students out of 870 applicants to participate in Google's 2022 Latinx Student Leadership Summit</li>
+          </ul>
+      </div>
+      <!-- Add more awards as needed -->
+    </section>
 
-<div class="column-3">
-	<div class="center">
-		<div class="column">
-			<!-- <img src="uscsail.png" width="100" height="100" alt="ANY 2021 Cohort" style="text-align: center" class="image-overlap-row2"> -->
-			<form action="#" method="get" target="_blank">
-			<button class="button"><span class="title">Machine Learning for Mental Health</span></button>
-			</form>
-			<p style="font-size: 11px">The Signal Analysis and Interpretation Laboratory at the University of Southern California collects a compilation of environmental and biometric data to monitor the emotional health of low-income families. My resposnibilites include programming and experiment with models to process data.</p>
-				<form action="#" method="get" target="_blank">
-				<div class="container">
-				  	<img src="usc-logo.png" width="55" height="55" alt="USC" style="left: 13%;">
-				  	<button><div class="overlay">USC SAIL Research 2022</div></button>
-				</div>
-				</form>
-		</div>
-	</div>
-</div>
-</div>
+	<div class="center" id="cv">
+    <p class="btn" alignment="center">View CV</p>
+  </div>
 
-<!-- Article Links -->
-<div class="section">
-	<div class="center">
-		<form action="https://events.withgoogle.com/lsls2022/meet-our-student-leaders/" method="get" target="_blank">
-			<button class="button"><span class="title">Google Latinx Leadership Feature</span></button>
-		</form>
+  </div>
 
-		<form action="https://www.instagram.com/lmstasolarcup/" method="get" target="_blank">
-			<button class="button" style="text-align: center; font-family: calibri type="submit">Solar Cup</button>
-		</form>
-	</div>
-</div>
-
-<!-- End of Article Links -->
-
-<!--
-<div class="center">
-	<div class="display-container">
-	  <img class="slides" src="Filtration System.png" style="width:70%">
-	  <img class="slides" src="PosterTemplate.jpg" style="width:70%">
-	  <img class="slides" src="BUGS_USC Biophotonics_Emerin.jpg" style="width:70%">
-	  <img class="slides" src="Kary_Cabrera_Train_Project_Blueprint___High_school.png" style="width:70%">
-	  <img class="slides" src="Kary_Cabrera_Chevron_Racecar_Project.png" style="width:69%">
-	  <img class="slides" src="Light_Post.jpeg" style="width:390px">
-	  <button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
-	  <button class="display-right" onclick="plusDivs(1)">&#10095;</button>
-	</div>
-	<div class="display-container">
-	<embed class="slides" src="Solar_Boat_Mechanical_Report_2020.pdf" width="650px" height="800px" />
-	<embed class="slides" src="Solar_Cup_Electrical_Report_2020.pdf" width="650px" height="800px" />
-	<embed class="slides" src="Solar_Boat_Mechanical_Report_2019.pdf" width="650px" height="800px" />
-	<embed class="slides" src="Self_Sustaining_Light_Post_System.pdf" width="650px" height="800px" />
-	<embed class="slides" src="EDD_Airfoil.pdf" width="650px" height="800px" />
-	</div>
-</div>
--->
-
-<!-- Slideshow container -->
-<!--
-<div class="center">
-	<div class="slideshow-container">
-	  <div class="mySlides fade">
-	    <div class="numbertext">1 / 3</div>
-	    <img src="BUGS_USC Biophotonics_Emerin.jpg" style="width:70%">
-	    <div class="text">Caption Text</div>
-	  </div>
-	  <div class="mySlides fade">
-	    <div class="numbertext">2 / 3</div>
-	    <img src="img2.jpg" style="width:100%">
-	    <div class="text">Caption Two</div>
-	  </div>
-	  <div class="mySlides fade">
-	    <div class="numbertext">3 / 3</div>
-	    <img src="img3.jpg" style="width:100%">
-	    <div class="text">Caption Three</div>
-	  </div>
-	  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-	  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-	</div>
-	<br>
-	<div style="text-align:center">
-	  <span class="dot" onclick="currentSlide(1)"></span>
-	  <span class="dot" onclick="currentSlide(2)"></span>
-	  <span class="dot" onclick="currentSlide(3)"></span>
-	</div>
-</div>
-<script>
-	let slideIndex = 1;
-	showSlides(slideIndex);
-	function plusSlides(n) {
-	  showSlides(slideIndex += n);
-	}
-	function currentSlide(n) {
-	  showSlides(slideIndex = n);
-	}
-	function showSlides(n) {
-	  let i;
-	  let slides = document.getElementsByClassName("mySlides");
-	  let dots = document.getElementsByClassName("dot");
-	  if (n > slides.length) {slideIndex = 1}    
-	  if (n < 1) {slideIndex = slides.length}
-	  for (i = 0; i < slides.length; i++) {
-	    slides[i].style.display = "none";  
-	  }
-	  for (i = 0; i < dots.length; i++) {
-	    dots[i].className = dots[i].className.replace(" active", "");
-	  }
-	  slides[slideIndex-1].style.display = "block";  
-	  dots[slideIndex-1].className += " active";
-	}
-</script>
--->
-
-<div class="center">
-	<div id="Contact">
+</body>
+<footer id="contact">
+  <div class="footer">
 		<a href="https://www.linkedin.com/in/karycabrera/" class="fa fa-linkedin"></a>
 		<a href="https://github.com/BitterDer" class="fa fa-github"></a>
 	</div>
-</div>
-<!--
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("slides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
--->
-</div>
+</footer>
 
-</body>
 </html>
