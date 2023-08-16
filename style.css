@@ -32,6 +32,26 @@ nav {
       padding: 10px;
       width: 200px;
       overflow-y: auto;
+      transition: width 0.3s ease;
+}
+nav.minimized {
+    width: 1px; /* Minimized width */
+}
+nav button.hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 20px;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
 }
 nav a {
       text-decoration: none;
