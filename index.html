@@ -1,164 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Academic Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Angelly</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #222;
+            overflow: hidden;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        /* Add a container class */
+        .container {
+            display: flex; /* This will align the sidebar and content side by side */
+        }
+
+        .sidebar {
+            /* float: left; Remove the float */
+            width: 30%; /* Adjust the width as needed */
+            background-color: #f5f5f5;
+            padding: 20px;
+            box-sizing: border-box; /* This ensures padding is included in the width */
+        }
+
+        .content {
+            /* float: right; Remove the float */
+            width: 70%; /* Adjust the width as needed */
+            padding: 20px;
+            box-sizing: border-box; /* This ensures padding is included in the width */
+        }
+        .icon {
+            width: 50px;
+            display: inline-block;
+        }
+        /* Adjust the header */
+        .content h1 {
+            margin-top: 20px; /* Adjust this value as needed */
+        }
+    </style>
 </head>
-
 <body>
-  <nav>
-    <button class="hamburger-menu"><i class="fa fa-bars"></i></button>
-    <img class="profile-img" src="images/angelly_me.jpeg" alt="Kary Angelly Cabrera">
-    <a href="#about" class="hover">About Me</a>
-    <a href="#research">Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#presentations">Presentations</a>
-    <a href="#awards">Awards</a>
-    <a href="#cv">CV</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <!--   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script> -->
-  <script>
-    var hamburgerMenu = document.querySelector('.hamburger-menu');
-    var nav = document.querySelector('nav');
 
-    hamburgerMenu.onclick = function() {
-      nav.classList.toggle('minimized');
-    };
-  </script>
-  
-  <div class="container">
-    <section id="about">
-      <h2><br>Welcome,</h2>
-      <p>My name is Angelly and I am an Electrical and Computer Engineering student at the University of Southern California (USC), specializing in Artificial Intelligence Applications. My interest in academic research ignited at the age of sixteen when I interned at my university's Biophotonics lab, investigating the relationship between Emerin and Actin protein concentrations in the development of Emery-Dreifuss Muscular Dystrophy.<br></p>
-      <p><br>As an undergraduate at USC, I've been recognized as a Presidential Scholar, Viterbi Fellow, and a Ming Hsieh Institute Undergraduate Research Scholar. These accolades have provided me with exclusive funding, leadership opportunities, and invaluable mentorship.</p>
-      <p><br>Now, as I look ahead to my journey as a prospective graduate student, I am looking to integrate my passion for the environment with my interests in machine learning to develop sustainable technology that benefits agricultural communities and promote greater access in communities most burned by the climate crisis.</p>
-	  <p><br>Below is a list of featured projects, awards and recognitions in greater detail.</p>
-	  <!--
-    <div class="column">
-		<div class="imgcontainer">
-			  <img src="images\googleleadership.png" width="40" height="40" alt="Google CSRMP 2023" style="text-align: center" class="resimage">
-			  <div class="overlay">Google CSRMP 2023</div>
-		</div>
-    -->
-    </section>
+<div class="navbar">
+    <a href="test.html">Angelly Cabrera</a>
+    <a href="research.html">Research</a>
+    <a href="projects.html">Portfolio</a>
+    <a href="#">Blog Posts</a>
+    <a href="images/Cabrera_Angelly_CV.pdf">CV</a>
+</div>
 
-    <section id="research">
-      <h2><br>Research Interests</h2>
-      <p>My research interests encompass two primary areas: computational sustainability and human-computer interaction. I have had the privilege to engage in various research experiences, and below are some select examples of my contributions in these fields.<br></p>
-      <br>
-      <div class="project">
-        <h3>Using Computer Vision to Predict Plant Growth Cycles and Detect Early Signs of Disease and Abnormality (2023)</h3>
-        <p>In progress...</p>
-      </div>
-      <div class="project">
-          <h3>Verizon: Identifying Objects and Sorting by Color (2022)</h3>
-          <p>Over 5 months, I collaborated closely with Verizon engineers and data scientists on a project aimed at training object detection models for product classification. My contributions involved creating training and validation datasets by annotating images of popular phone models and developing a color sorting algorithm by extracting RGB values from these images. These datasets played a crucial role in training the object detection models, which achieved remarkable results in sorting phones by brand and color with a high confidence level of 96% and a precision of 98%. Additionally, the color sorting algorithm was capable of accurately sorting and predicting over 800  distinct colors.</p>
-      </div>
-      <div class="project">
-        <h3>Understanding the Role of Machine Learning for Music in Media (2021)</h3>
-        <p>The Center of Computational Media Intelligence (CCMI) at USC organized a 5-month workshop to encourage students to explore interests in developing human-centered AI technology. During this workshop, I worked on projects that combined machine learning and social applications of AI in media, investigating the use of loss functions to improve predictive performance and analyzing music API datasets to identify over 100 key features that could be used to create music genre recommendations.</p>
-      </div>
-      <div class="project">
-        <h3>Developing an Emotion Measuring Object (EMO): A Circuit Design Approach for Voice-based Anger Detection (2021)</h3>
-        <p>During the two-month-long CreAItivity AI Ethics Lab fellowship and competition, I actively engaged in weekly workshops focusing on the current ethical research in AI. As a fellow, I collaborated with a small team to develop an emotion-measuring device that utilized Arduino volume sensors to predict anger levels, earning us 2nd place overall in the competition. Furthermore, I conducted an in-depth analysis on the ethical concerns of artificial intelligence and its potential applications for social good, which I presented and contributed to in writing.</p>
-      </div>
-      <div class="project">
-        <h3>The Impact of Emerin and Actin Protein Synthesis Disruption on Muscular Dystrophy Caused by RNA Interference (2018)</h3>
-        <p>I began conducting research as young as sixteen years old, with this project being the one to set in motion my interest in pursuing graduate studies. As a research assistant, I applied nuclear extraction and imaging techniques to observe the relationship between Emerin and Actin protein levels in Emery-Dreifuss Muscular Dystrophy development. Analyzing these images revealed no notable protein weight alteration post-RNAi introduction and suggested minimal impact on Actin expression.</p>
-      </div>
-      <!-- Add more awards as needed -->
-    </section>
-
-    <section id="projects">
-      <h2><br>Featured Projects</h2>
-      <p>Below are a select few of my most challenging projects that required a fair bit of research.</p>
-      <br>
-      <div class="project">
-        <h3>Flick Pick: A Collaborative Filtering-Based Movie Recommendation Chrome Extension</h3>
-        <p>
-			Flick Picks is a movie recommendation Chrome extension that utilizes collaborative filtering to create personalized movie suggestions based on user preferences and the ratings of a community of users.
-        </p>
-      </div>
-      <div class="project">
-        <h3>Super Mario for VGA</h3>
-        <p>
-			    In this project, I developed a platformer game inspired by the 8-bit Super Mario for VGA using Verilog and Vivado. The goal was to create a game where the player could move through a map with obstacles and enemies, collect coins, and reach the end. I designed various mechanics, including obstacles with unique behaviors, collision checks, and gravity for realistic jumping and falling. 
-        </p>
-      </div>
-	   <div class="project">
-        <h3>Electric Guitar with Notch-Filter for Signal Attenuation</h3>
-        <p> 
-          In this project, I successfully built an electric guitar and designed a band-reject filter using a simple op-amp circuit to amplify the guitar pickup's electrical signal and reject specific frequencies. The project consisted of three main phases. In the first phase, I constructed the guitar using a wooden block as the neck and a cigar box as the body, with a Seymour Duncan pickup. In the second phase, I designed the band-reject filter to reject a selected frequency of 196 Hz. I experimented with different resistor and capacitor values using LTSpice and then built the circuit accordingly. In the third phase, I physically built the notch filter and connected it to the guitar pickup, producing sound from the guitar. 
-        </p>
-      </div>
-      <div class="project">
-        <h3>Raspberry PI-Based K-Means for Music Genre Classification</h3>
-        <p> 
-          In this project, I contributed to creating an IoT system that utilized K-means clustering, connecting a Raspberry Pi with RESTFUL APIs to recommend music based on sound sensor data. The process involved using sound sensors to collect data, which was then subjected to K-means clustering to determine the genre of the music. This genre information was used to search the top three tracks belonging to that genre which are displayed on the Raspberry Pi's LCD.
-        </p>
-      </div>
-      <div class="project">
-        <h3>Solar Boat</h3>
-        <p> 
-          My personal favorite. In this year-long competition, I led a team of 20 students to design a 16-foot solar powered boat accompanied with several technical reports and a public service announcemnt on water conservation. Acheiving perfect scores on every technical report, the first time ever in my high-school's history, placed us as one of the few top scoring teams regionally across all competing schools in California. However, we never got to race our boat due to the pandemic.
-        </p>
-      </div>
-      <!-- Add more projects as needed -->
-    </section>
-
-    <section id="presentations">
-      <h2><br>Presentations</h2>
-      <div class="award">
-        <ul>
-          <li>MICROSOFT E+D INTERN DEMO SYMPOSIUM , Microsoft Headquarters, Redmond, WA, July 2023. Cabrera, A., Saldana G., Hassan N., Umoren E., “Incident Post-Mortem Analysis,” Selected as one of the top 50 teams, from a competitive organization-wide selection, to present at the Microsoft E+D Intern Symposium.</li>
-          <li>BREAK THROUGH TECH LOS ANGELES, University of California, Los Angeles (UCLA), Los Angeles, CA, December 2022. Cabrera, A., Reyes S., “<a href="https://docs.google.com/presentation/d/1Qv1bzP7mPOSadjMTkd4OtHOTgF39Bd2bOebcKOvpu9g/edit#slide=id.g16a6a87d4ab_0_0">Team Verizon: Identifying Objects and Sorting by Color</a>,” Presentation awarded finalist title for the National Center for Women in Technology's Collegiate award</li>
-          <li>CENTER OF COMPUTATIONAL MEDIA INTELLIGENCE EXPLORECSR, University of Southern California, Los Angeles, CA, May 2021. Cabrera, A., Ojukwu, C., Lim, S., Deng, J., “Understanding the Role of Machine Learning for Music in Media”</li>
-          <li>LENNOX MATHEMATICS SCIENCE ENGINEERING ACADEMY, Lennox Mathematics Science Engineering Academy, Lennox, CA, June 2020. Cabrera, A., Cancinos, J., Salgado, N., Perez, D., “Self-Sustaining Light Post System Utilizing an Electromechanical Generator”</li>
-          <li>BRIDGE UNDERGRADUATE SCIENCE INSTITUTE SYMPOSIUM, University of Southern California, Los Angeles, CA, August 2018. Cabrera, A., Rodriguez, W., “The Impact of Emerin and Actin Protein Synthesis Disruption on Muscular Dystrophy Caused by RNA Interference”</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="awards">
-      <h2><br>Awards</h2>
-      <div class="award">
-          <ul>
-            <li>Graduate School Mentorship Initiative, Cientifico Latino (2023): Selected as one of 100 high-achiving students to participate in Cientifico Latino's Graduate School Mentorship Initiative (GSMI)</li>
-            <li>Ming Hsieh Institute Undergraduate Research Scholar, USC (2023): Selected as one of 5 undergraduate researchers to receive exclusive funding, leadership, and mentorship opportunities</li>
-            <li>Collegiate Award Finalist, NCWIT Aspirations in Computing (2023): Selected as one of 47 undergraduate and graduate women to receive recognition for developing high-impact projects</li>
-            <li>Computer Science Research Mentorship Program (CSRMP), Google (2023): Selected as one of 135 students to participate in Google’s semester-long research pathways and mentorship program</li>
-            <li>Latinx Student Leader, Google (2022): Selected as one of 130 students out of 870 applicants to participate in Google's 2022 Latinx Student Leadership Summit</li>
-          </ul>
-      </div>
-      <!-- Add more awards as needed -->
-    </section>
-
-    <section id="cv">
-    <h2><br>CV: Updated August 2023</h2>
-    <div class="center">
-      <p class="btn" onclick="openCV()" alignment="center">View CV</p>
+<div class="container">
+    <div class="sidebar">
+        <img src="images/angelly_me.jpeg" alt="Profile Image" width="200">
+        <h2>Angelly Cabrera</h2>
+        <p>Undergraduate Electrical and Computer Engineering student at the University of Southern California.</p>
+        <div>
+            <span class="icon">📍</span> University of Southern California
+        </div>
+        <div>
+            <span class="icon">🐦</span> Twitter
+        </div>
+        <div>
+            <span class="icon">💼</span> <a href="https://www.linkedin.com/in/karycabrera/">LinkedIn</a>
+        </div>
+        <div>
+            <span class="icon">🐱</span> <a href="https://github.com/BitterDer">Github</a>
+        </div>
+        <!--
+        <div>
+            <span class="icon">📚</span> Google Scholar
+        </div>
+        <div>
+            <span class="icon">🆔</span> ORCID
+        </div>
+        -->
     </div>
 
-    <script>
-      function openCV() {
-          window.open("images/Cabrera_Angelly_CV.pdf", '_blank');
-      }
-      </script>
-    </section>
+    <div class="content">
+        <h1>Welcome</h1>
+        <p>My name is Angelly and I am an Electrical and Computer Engineering student at the University of Southern California (USC), specializing in Artificial Intelligence Applications. My interest in academic research ignited at the age of sixteen when I interned at my university's Biophotonics lab, investigating the relationship between Emerin and Actin protein concentrations in the development of Emery-Dreifuss Muscular Dystrophy.<br></p>
+        <p>As an undergraduate at USC, I've been recognized as a Presidential Scholar, Viterbi Fellow, and a Ming Hsieh Institute Undergraduate Research Scholar. These accolades have provided me with exclusive funding, leadership opportunities, and invaluable mentorship. 
+            Now, as I look ahead to my journey as a prospective graduate student, I am looking to integrate my passion for the environment with my interests in machine learning to develop sustainable technology that benefits agricultural communities and promote greater access in communities most burned by the climate crisis.</p>
+        <p><br>Below is a list of featured awards and recognitions in greater detail.</p>
+        <!-- Add more content as per the image -->
 
-  </div>
+        <section id="awards">
+            <h2><br>Awards</h2>
+                <ul>
+                  <li>Graduate School Mentorship Initiative, Cientifico Latino (2023): Selected as one of 100 high-achiving students to participate in Cientifico Latino's Graduate School Mentorship Initiative (GSMI)</li>
+                  <li>Ming Hsieh Institute Undergraduate Research Scholar, USC (2023): Selected as one of 5 undergraduate researchers to receive exclusive funding, leadership, and mentorship opportunities</li>
+                  <li>Collegiate Award Finalist, NCWIT Aspirations in Computing (2023): Selected as one of 47 undergraduate and graduate women to receive recognition for developing high-impact projects</li>
+                  <li>Computer Science Research Mentorship Program (CSRMP), Google (2023): Selected as one of 135 students to participate in Google’s semester-long research pathways and mentorship program</li>
+                  <li>Latinx Student Leader, Google (2022): Selected as one of 130 students out of 870 applicants to participate in Google's 2022 Latinx Student Leadership Summit</li>
+                </ul>
+        </section>
+    </div>
+</div>
+
+<!-- Clear floats -->
+<div style="clear:both;"></div>
 
 </body>
-<footer id="contact">
-  <div class="footer">
-		<a href="https://www.linkedin.com/in/karycabrera/" class="fa fa-linkedin"></a>
-		<a href="https://github.com/BitterDer" class="fa fa-github"></a>
-	</div>
-</footer>
-
 </html>
