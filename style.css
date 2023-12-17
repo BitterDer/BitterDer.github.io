@@ -23,7 +23,6 @@ body {
 .container {
     display: flex; /* This will align the sidebar and content side by side */
 }
-
 .sidebar {
     /* float: left; Remove the float */
     width: 30%; /* Adjust the width as needed */
@@ -31,7 +30,11 @@ body {
     padding: 20px;
     box-sizing: border-box; /* This ensures padding is included in the width */
 }
-
+.sidebar img {
+    margin: 5px; 
+    max-width: 100%;
+    height: auto; 
+}
 .content {
     /* float: right; Remove the float */
     width: 70%; /* Adjust the width as needed */
@@ -52,6 +55,11 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
+}
+.project img {
+    margin: 5px; 
+    max-width: 100%;
+    height: auto; 
 }
 .award {
     overflow: hidden; /* This will prevent content overflow */
