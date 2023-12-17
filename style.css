@@ -61,3 +61,6 @@ body {
     border-radius: 5px;
     background-color: #f9f9f9;
 }
+#posterLink:link, #posterLink:visited, #posterLink:hover, #posterLink:active {
+    color: black; /* Or any color you prefer */
+}
